@@ -1,6 +1,6 @@
 package lesson_17_2023_09_27;
 
-import home_work_17.Car;
+
 
 public class lesson_17_Dog {
     public static void main(String[] args) {

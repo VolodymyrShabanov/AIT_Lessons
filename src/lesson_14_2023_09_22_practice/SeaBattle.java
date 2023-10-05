@@ -65,8 +65,6 @@ public class SeaBattle {
             showField(field);
 
 
-
-
             countAttempts++;
 
 //            выход из цикла
@@ -122,7 +120,6 @@ public class SeaBattle {
         for (int i = 0; i < field.length; i++) {
 
             if (i == 0) {
-
 
                 //String result = "";
                 StringBuilder sb = new StringBuilder();

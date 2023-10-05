@@ -10,6 +10,8 @@ import java.util.Random;
 public class RubberArray {
     private int[] array; // можно инициализировать поле при его объявлении = new int[10];
     private int cursor;
+
+    static final int MULTIPLIER = 2;
     Random random = new Random();
 
     public RubberArray() {
@@ -54,7 +56,7 @@ public class RubberArray {
 
     private void expandArray() {
 //        int[] newArray = Arrays.copyOf(array, array.length * 2);
-        int[] newArray = new int[array.length * 2];
+        int[] newArray = new int[array.length * MULTIPLIER];
         for (int i = 0; i < array.length; i++) {
             newArray[i] = array[i];
         }

@@ -23,6 +23,8 @@ public class Bus {
 
     }
 
+
+
     public Bus(String model, int capacity, BusDriver driver) {
         this.driver = driver;
         this.model = model;
@@ -33,6 +35,9 @@ public class Bus {
     }
 
     public boolean takePassenger(Passenger passenger) {
+        // проверка Если пассажир имеет билет (не важно в каком автобусе), не пускаем его в автобус.
+        if (passenger.getTicketNumber() != null) return false;
+
         if (amountPassenger < capacity) {
             // Done - выдать билет изменить кол-во пассажиров в автобусе
             passenger.setTicketNumber(generateTicketNumber(passenger.getId()));
@@ -47,12 +52,12 @@ public class Bus {
         int indexPassenger = isPassengerInBus(passenger.getId());
         if (indexPassenger >= 0) {
 //            passengers[indexPassenger] = null;
-            passengers[indexPassenger] = passengers[amountPassenger-1];
-            passengers[amountPassenger-1] = null;
+            for (int i = indexPassenger; i < amountPassenger - 1; i++) {
+                passengers[i] = passengers[i + 1];
+            }
+
+            passengers[amountPassenger - 1] = null;
             passenger.setTicketNumber(null);
-
-            // TODO - дописать метод в части удаления пассажира
-
             amountPassenger--;
 
             return true;
@@ -129,6 +134,7 @@ public class Bus {
     }
 
     public void setDriver(BusDriver driver) {
+        //System.out.println(driver.getName());
         this.driver = driver;
     }
 

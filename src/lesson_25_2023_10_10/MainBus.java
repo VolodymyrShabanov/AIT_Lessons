@@ -54,7 +54,16 @@ public class MainBus {
         System.out.println(Arrays.toString(bus1.getPassengers()));
         System.out.println(bus1.toString());
 
+        System.out.println("Set new Driver");
+        BusDriver bob = new BusDriver("Bob Grand", "AD-234");
+        bus1.setDriver(bob);
+        System.out.println(bus1.toString());
 
+        BusDriver gena = new BusDriver("Gennadiy", "GS-345");
+        bus1.setDriver(gena);
+        System.out.println(bus1.toString());
+
+        System.out.println(bob.getDriverLicence());
 
 
     }

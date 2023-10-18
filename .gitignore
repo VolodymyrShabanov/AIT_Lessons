@@ -2,8 +2,11 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+
 .idea/
 AIT_Lessons.iml
+src/draft/
+
 ### Eclipse ###
 .apt_generated
 .classpath

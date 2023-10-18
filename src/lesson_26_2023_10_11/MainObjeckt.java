@@ -1,6 +1,4 @@
-package lesson_26_2023_10_11.animals;
-
-import java.sql.SQLOutput;
+package lesson_26_2023_10_11;
 
 public class MainObjeckt {
     public static void main(String[] args) {

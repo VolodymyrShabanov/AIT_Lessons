@@ -1,4 +1,4 @@
-package lesson_24_2023_10_09.lesson;
+package lesson_24_2023_10_09.vehicle;
 
 public class Train extends Vehicle{
     int capacity;

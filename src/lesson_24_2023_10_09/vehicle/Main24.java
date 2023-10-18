@@ -1,4 +1,4 @@
-package lesson_24_2023_10_09.lesson;
+package lesson_24_2023_10_09.vehicle;
 
 public class Main24 {
     public static void main(String[] args) {

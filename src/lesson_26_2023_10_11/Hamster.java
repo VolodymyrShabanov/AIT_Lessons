@@ -1,4 +1,4 @@
-package lesson_26_2023_10_11.animals;
+package lesson_26_2023_10_11;
 
 public class Hamster extends Animal {
 

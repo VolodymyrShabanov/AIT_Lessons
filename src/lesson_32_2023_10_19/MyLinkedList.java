@@ -112,7 +112,6 @@ public class MyLinkedList<T> implements MyList<T>, Queue<T> {
         return indexOf(value) >= 0;
     }
 
-    // todo - реализовать
     public T[] toArray() {
         T[] result = (T[]) new Object[this.size];
         Node<T> tempArray = this.first;
@@ -123,12 +122,10 @@ public class MyLinkedList<T> implements MyList<T>, Queue<T> {
         return result;
     }
 
-    // todo - реализовать
     public boolean remove(T value) {
         return false;
     }
 
-    // todo - реализовать
     public T remove(int index) {
         return null;
     }
@@ -139,7 +136,6 @@ public class MyLinkedList<T> implements MyList<T>, Queue<T> {
         return size == 0;
     }
 
-    // todo - реализовать
     public T get(int index) {
         if (index < 0 || index > this.size - 1) return null;
         Node<T> tempValue = this.first;

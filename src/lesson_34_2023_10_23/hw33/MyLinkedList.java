@@ -257,7 +257,6 @@ public class MyLinkedList<T> implements MyList<T>, Queue<T>, Iterable<T> {
 
     //@Override
     public T getLast() {
-        //TODO переписать. Если в листе только 1 элемент - вернуть его значение
         T value = null;
         if (last != null) {
             value = last.value;

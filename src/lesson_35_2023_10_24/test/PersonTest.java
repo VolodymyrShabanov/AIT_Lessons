@@ -69,7 +69,7 @@ class PersonTest {
     static Stream<String> generateDateForEmailTest() {
         return Stream.of("invЖlid@test.de", "inval!d@test.de", "i#valid@test.de",
                 "invalid@te*st.de", "inv alid@test.de", "invalid@te$t.de");
-        // TODO - насколько корректно использование не английского алфавита
+        // Done - насколько корректно использование не английского алфавита
     }
 
 

@@ -1,8 +1,5 @@
-package lesson_37;
+package lesson_37_2023_10_26;
 
-import lesson_35_2023_10_24.Person;
-
-import java.sql.SQLOutput;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
@@ -78,7 +75,7 @@ public class TimeApiExample {
         ZonedDateTime zonedDateTime = ZonedDateTime.now();
         System.out.println("zonedDateTime.getZone(): " + zonedDateTime + " | " + zonedDateTime.getZone());
 
-        System.out.println("\n================= isAfter, isBefore, until =================");
+        System.out.println("\n================= isAfter, isBefore, equals, until =================");
         LocalDate date4 = LocalDate.of(2020, 10, 15);
         LocalDate date5 = LocalDate.of(2020, 6, 25);
 
@@ -148,6 +145,7 @@ public class TimeApiExample {
 
 
         System.out.println("========DZ");
+
         String dataParse = "15-12-2022 20-46";
         DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("dd-MM-yyyy HH-mm");
         LocalDateTime parsedDateTime1 = LocalDateTime.parse(dataParse, formatter2);
@@ -160,7 +158,7 @@ public class TimeApiExample {
 
         String dataParse2 = "13-01-2023 00-47";
         LocalDateTime parsedDateTime2 = LocalDateTime.parse(dataParse2, formatter2);
-        System.out.println("dataParse1: " + dataParse2);
+        System.out.println("dataParse2: " + dataParse2);
         System.out.println(parsedDateTime2.getYear() + " | "
                 + parsedDateTime2.getMonth() + " | "
                 + parsedDateTime2.getDayOfMonth()

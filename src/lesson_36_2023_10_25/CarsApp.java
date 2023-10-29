@@ -1,4 +1,4 @@
-package lesson_36_2023_10_24;
+package lesson_36_2023_10_25;
 
 import java.util.Arrays;
 import java.util.Comparator;

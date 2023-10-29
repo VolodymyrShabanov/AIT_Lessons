@@ -7,15 +7,14 @@ public class Bus {
     private final String number;
     private final Passenger[] passengers;
     private int count;
-
+    private Driver driver; // агрегирование, композиция, включение
     private boolean isGo;
+
 
     public Bus(String number) {
         this.number = number;
         this.passengers = new Passenger[5];
     }
-
-    private Driver driver; // агрегирование, композиция, включение
 
     public void setDriver(Driver driver) {
         this.stop();

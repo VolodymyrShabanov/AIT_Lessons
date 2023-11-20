@@ -1,0 +1,1 @@
+[lesson 2 - Git/GitHub (link)](https://western-appeal-39b.notion.site/Linux-Git-2-Nov-17-2023-67b6a8125bf242869a1f680b04a0abf8)
